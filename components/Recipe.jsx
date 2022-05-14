@@ -1,9 +1,9 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const RecipeCard = ({recipes}) => {
-    const {title , slug , thumbnail, featuredImage, ingredients, cookingTime, method} = recipes.fields;
+    const {title , slug , thumbnail, cookingTime} = recipes.fields;
    
     return ( <div className="card">
        <div className ="featured">
