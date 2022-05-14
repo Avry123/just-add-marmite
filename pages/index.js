@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { createClient } from "contentful"
 import RecipeCard from '../components/Recipe';
 
