@@ -7,7 +7,8 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:next/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -21,5 +22,10 @@ module.exports = {
     ],
     "rules": {
         "react/prop-types": "off"
+    },
+    "settings": {
+      "react" : {
+          "version": 'detect'
+      }
     }
 }
