@@ -1,7 +1,9 @@
 import React  from 'react';
-import { createClient } from "contentful"
+import { createClient } from "contentful";
 import Image from 'next/image';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+// import {documentToReactComponents}  from '@contentful/rich-text-react-renderer';
+var {documentToReactComponents} = require('@contentful/rich-text-react-renderer');
+
 
 //This gives us access to contentful.
 const client = createClient({
@@ -45,8 +47,6 @@ export async function getStaticProps({params}) {
 export default function RecipeDetails({recipe}) {
 
   const {featuredImage, title, cookingTime, ingredients, method} = recipe.fields;
-
-  console.log(recipe);
   return (
     <div>
      <div className="banner">
