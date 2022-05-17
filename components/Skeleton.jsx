@@ -1,0 +1,36 @@
+import React from 'react';
+
+const Skeleton = () => {
+    return ( <><div className='skeleton'>
+        <div className='s_banner'></div>
+        <div className='s_header'></div>
+        <div className='s_content'></div>
+        <div className='s_content'></div>
+        <div className='s_content'></div>
+    </div><style jsx>{`
+    .skeleton {
+          max-width: 1200px;
+          margin: 20px auto;
+        }
+        .skeleton > div {
+          background: #dbcc1a;
+          border-radius: 4px;
+          margin: 20px 0;
+        }
+        .s-banner {
+          padding: 12% 0;
+        }
+        .s-header {
+          padding: 15px 0;
+          max-width: 500px;
+        }
+        .s-content {
+          padding: 8px 0;
+          max-width: 1000px;
+        }
+    
+    `}</style></>
+    );
+}
+ 
+export default Skeleton;
