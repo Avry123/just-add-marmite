@@ -14,7 +14,9 @@ export async function getStaticProps() {
 
 
   //This creates a prop where you can store data and pass it on to Recipes.
-  return { props : {recipes : res.items} }
+  return { props : {recipes : res.items},
+           revalidate: 1        
+}
 }
 
 export default function Recipes({recipes}) {

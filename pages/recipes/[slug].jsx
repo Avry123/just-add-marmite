@@ -37,7 +37,9 @@ export async function getStaticProps({params}) {
  });
 
  return {
-   props: {recipe : items[0]}
+   props: {recipe : items[0]},
+   revalidate : 1 
+   //If change is made in the content, it needs to be refreshed and revalidate does that for us 1 meand it does that within 1 second.
  }
 
 }
