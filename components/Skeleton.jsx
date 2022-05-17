@@ -2,11 +2,11 @@ import React from 'react';
 
 const Skeleton = () => {
     return ( <><div className='skeleton'>
-        <div className='s_banner'></div>
-        <div className='s_header'></div>
-        <div className='s_content'></div>
-        <div className='s_content'></div>
-        <div className='s_content'></div>
+        <div className='s-banner'></div>
+        <div className='s-header'></div>
+        <div className='s-content'></div>
+        <div className='s-content'></div>
+        <div className='s-content'></div>
     </div><style jsx>{`
     .skeleton {
           max-width: 1200px;
